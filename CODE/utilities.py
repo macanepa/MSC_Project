@@ -68,5 +68,5 @@ def create_directory(dir):
 
 def PrintGitHub():
     print ">>GNU GENERAL PUBLIC LICENCE v3.0<<"
-    print ">>Developed by Matias Canepa<<"
+    print ">>Developed by Matias Canepa Gonzalez<<"
     print ">>https://github.com/macanepa<<\n"
