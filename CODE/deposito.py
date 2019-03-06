@@ -49,9 +49,6 @@ def Deposito():
 
 
 
-
-
-
         import openpyxl
         import os
 
@@ -71,9 +68,6 @@ def Deposito():
             data.append([])
             for x in range(len(table.columns)):
                 data[-1].append(table.iloc[y][x])
-        print data
-
-        print list
 
         x = 1
         z = 0
@@ -104,18 +98,25 @@ def Deposito():
             create_directory(save_location)
 
 
+        import platform
+        os_platform = platform.system()
         try:
             table.to_excel(save_location+'/file_output.xlsx')
             print "Saved Succesfully"
+        except:
+            Print_Error('Error Saving File!')
+
+        if(os_platform == 'Linux'):
             try:
                 os.system('xdg-open ' + os.getcwd() + '/demo.xlsx')
             except:
-                try:
-                    os.system('start ' + os.getcwd() + '/demo.xlsx')
-                except:
-                    Print_Error("Couldn't open the output file!")
-        except:
-            Print_Error("Error with output directory")
+                Print_Error("Couldn't open the output file!")
+
+        if(os_platform == 'Windows'):
+            try:
+                os.system('start ' + os.getcwd() + '/demo.xlsx')
+            except:
+                Print_Error("Couldn't open the output file!")
 
     else:
         Print_Error("File not compatible!")
