@@ -1,7 +1,7 @@
 
 def Deposito():
     import pandas as pd
-    from utilities import Print_Error,get_files,Select_Menu,create_directory
+    from utilities import Print_Error,get_files,Select_Menu,create_directory,OpenFile
 
 
 
@@ -98,25 +98,17 @@ def Deposito():
             create_directory(save_location)
 
 
-        import platform
-        os_platform = platform.system()
+
         try:
             table.to_excel(save_location+'/file_output.xlsx')
             print "Saved Succesfully"
         except:
             Print_Error('Error Saving File!')
 
-        if(os_platform == 'Linux'):
-            try:
-                os.system('xdg-open ' + os.getcwd() + '/demo.xlsx')
-            except:
-                Print_Error("Couldn't open the output file!")
 
-        if(os_platform == 'Windows'):
-            try:
-                os.system('start ' + os.getcwd() + '/demo.xlsx')
-            except:
-                Print_Error("Couldn't open the output file!")
+        directory =  os.getcwd() + '/demo.xlsx'
+        OpenFile(directory)
+
 
     else:
         Print_Error("File not compatible!")

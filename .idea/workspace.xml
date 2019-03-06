@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a096b431-3bde-4cf8-abbd-7302d86a1d28" name="Default Changelist" comment="">
+    <list default="true" id="a096b431-3bde-4cf8-abbd-7302d86a1d28" name="Default Changelist" comment="-New Compilation">
+      <change beforePath="$PROJECT_DIR$/.idea/MSC_Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MSC_Project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CODE/data_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/CODE/data_manager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CODE/deposito.py" beforeDir="false" afterPath="$PROJECT_DIR$/CODE/deposito.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CODE/main.exe" beforeDir="false" afterPath="$PROJECT_DIR$/CODE/main.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CODE/utilities.py" beforeDir="false" afterPath="$PROJECT_DIR$/CODE/utilities.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,24 +17,47 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/MSC_Project$main.coverage" NAME="main Coverage Results" MODIFIED="1551888505971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CODE" />
+    <SUITE FILE_PATH="coverage/MSC_Project$deposito.coverage" NAME="deposito Coverage Results" MODIFIED="1551901022040" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CODE" />
+    <SUITE FILE_PATH="coverage/MSC_Project$main.coverage" NAME="main Coverage Results" MODIFIED="1551901748633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CODE" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CODE/deposito.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="471">
-              <caret line="122" selection-start-line="122" selection-end-line="122" />
+            <state relative-caret-position="159">
+              <caret line="111" selection-start-line="111" selection-end-line="111" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CODE/data_manager.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="69" column="33" lean-forward="true" selection-start-line="69" selection-start-column="33" selection-end-line="69" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CODE/data_manager.py">
+        <entry file="file://$PROJECT_DIR$/CODE/mean_weight.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1105">
-              <caret line="65" selection-start-line="65" selection-end-line="65" />
+            <state relative-caret-position="153">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CODE/utilities.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="76" column="35" selection-start-line="76" selection-start-column="35" selection-end-line="76" selection-end-column="35" />
+              <folding>
+                <element signature="e#200#1018#0" />
+                <element signature="e#1040#1242#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -53,8 +81,10 @@
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/CODE/CONFIG/MAIN.config" />
-        <option value="$PROJECT_DIR$/CODE/data_manager.py" />
+        <option value="$PROJECT_DIR$/CODE/mean_weight.py" />
+        <option value="$PROJECT_DIR$/CODE/utilities.py" />
         <option value="$PROJECT_DIR$/CODE/deposito.py" />
+        <option value="$PROJECT_DIR$/CODE/data_manager.py" />
       </list>
     </option>
   </component>
@@ -69,7 +99,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -98,6 +127,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -106,6 +136,11 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Matias\PycharmProjects\MSC_Project\CODE" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -119,7 +154,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.main">
+    <configuration name="deposito" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="MSC_Project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CODE" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CODE/deposito.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MSC_Project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -145,6 +202,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.deposito" />
       </list>
     </recent_temporary>
   </component>
@@ -160,7 +218,8 @@
       <updated>1551827736898</updated>
       <workItem from="1551827738485" duration="115000" />
       <workItem from="1551832719169" duration="12514000" />
-      <workItem from="1551837611080" duration="737000" />
+      <workItem from="1551837611080" duration="1385000" />
+      <workItem from="1551899559036" duration="2321000" />
     </task>
     <task id="LOCAL-00001" summary="ignore .idea">
       <created>1551880589600</created>
@@ -176,21 +235,29 @@
       <option name="project" value="LOCAL" />
       <updated>1551897225604</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="-New Compilation">
+      <created>1551897465814</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1551897465814</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13366000" />
+    <option name="totallyTimeSpent" value="16335000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1040" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25918368" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1622449" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49882904" visible="true" weight="0.38842976" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49882904" visible="true" weight="0.3878887" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -214,7 +281,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ignore .idea" />
     <MESSAGE value="-Cross-Platform Bug Fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="-Cross-Platform Bug Fix" />
+    <MESSAGE value="-New Compilation" />
+    <option name="LAST_COMMIT_MESSAGE" value="-New Compilation" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -224,24 +292,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CODE/CONFIG/MAIN.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CODE/mean_weight.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CODE/utilities.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="76" column="35" selection-start-line="76" selection-start-column="35" selection-end-line="76" selection-end-column="35" />
+          <folding>
+            <element signature="e#200#1018#0" />
+            <element signature="e#1040#1242#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CODE/deposito.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="122" selection-start-line="122" selection-end-line="122" />
+        <state relative-caret-position="159">
+          <caret line="111" selection-start-line="111" selection-end-line="111" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CODE/data_manager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CODE/CONFIG/MAIN.config">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+        <state relative-caret-position="190">
+          <caret line="69" column="33" lean-forward="true" selection-start-line="69" selection-start-column="33" selection-end-line="69" selection-end-column="33" />
         </state>
       </provider>
     </entry>

@@ -70,10 +70,10 @@ def Generate_Pivot_Table(config, file_dir):
         Save_To_Excel(table,config)
 
 def Save_To_Excel(table,config):
-        from utilities import Get_Date,Print_Error,create_directory
+        from utilities import Get_Date,Print_Error,create_directory,OpenFile
         print "\nSaving to Excel"
 
-        dir=config.destination + '/%s/OUTPUTS/' % (config.service.upper())
+        dir=config.destination + '/%s/OUTPUrTS/' % (config.service.upper())
         import os
         if(not os.path.exists(dir)):
             Print_Error("Directory Not Found!")
@@ -83,5 +83,9 @@ def Save_To_Excel(table,config):
             table.to_excel(
                 config.destination + '/%s/OUTPUTS/%s %s.xlsx' % (config.service.upper(), config.vessel_name.upper(), Get_Date()))
             print "Saved Successfully"
+
+            table.to_excel('Output.xlsx')
+            OpenFile(os.getcwd()+ '/Output.xlsx')
+
         except:
             Print_Error("Error with output directory")

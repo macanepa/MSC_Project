@@ -48,7 +48,7 @@ def Get_Date():
 def get_files(directories = []):
     import os
     available_files = []
-
+    directories = list(set(directories))
     desktop_dir = os.path.expanduser("~/Desktop")
     directories.append(desktop_dir)
     directories.append(os.getcwd())
@@ -70,3 +70,20 @@ def PrintGitHub():
     print ">>GNU GENERAL PUBLIC LICENCE v3.0<<"
     print ">>Developed by Matias Canepa<<"
     print ">>https://github.com/macanepa<<\n"
+
+def OpenFile(directory):
+    import platform
+    import os
+    os_platform = platform.system()
+
+    if (os_platform == 'Linux'):
+        try:
+            os.system('xdg-open ' + directory)
+        except:
+            Print_Error("Couldn't open the output file!")
+
+    if (os_platform == 'Windows'):
+        try:
+            os.system('start ' + directory)
+        except:
+            Print_Error("Couldn't open the output file!")
