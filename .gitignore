@@ -112,3 +112,11 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#Compiled executable
+.CODE/main.exe
+.CODE/dist/*
+.CODE/build/*
+
+#.idea/
+.idea/
