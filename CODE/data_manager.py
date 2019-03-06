@@ -73,7 +73,7 @@ def Save_To_Excel(table,config):
         from utilities import Get_Date,Print_Error,create_directory,OpenFile
         print "\nSaving to Excel"
 
-        dir=config.destination + '/%s/OUTPUrTS/' % (config.service.upper())
+        dir=config.destination + '/%s/OUTPUTS/' % (config.service.upper())
         import os
         if(not os.path.exists(dir)):
             Print_Error("Directory Not Found!")
