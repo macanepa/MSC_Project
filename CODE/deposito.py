@@ -22,19 +22,80 @@ def Deposito():
     file_name = Select_Menu(available_file,"Select a File",return_type=int)
     file_name = available_file[(file_name)]
 
+
+
+
     if (file_name.upper().endswith(".XLS")):
         print "Importing XLS File!"
         sheet = "LinnerBooking"
         df = pd.read_excel(io=file_name, sheet_name=sheet)
 
         df = df[['Booking','Deposito','Weight','Tipo Ctr']]
-        df['Weight'] = df['Weight']/1000 #Transformar a Tons.
 
+        df = df.loc[(df['Deposito'] == "MEDLOG SAN ANTONIO") | (df['Deposito'] == "SITRANS SAI ALTO DEPOT")
+        | (df['Deposito'] == "SITRANS VALPARAISO DEPOT")
+        |(df['Deposito'] == "MEDLOG SANTIAGO")]
+
+        df['Weight'] = df['Weight']/1000 #Transformar a Tons.
+        # df = df.loc[(df['Tipo Ctr'] == '20DV') | (df['Tipo Ctr'] == '40DV') | (df['Tipo Ctr'] == '40HC')]
         table = pd.pivot_table(df,values='Weight',aggfunc='count',index='Deposito',columns='Tipo Ctr')
+        table = table.reindex(columns=['20DV', '40DV', '40HC'])
+
+        table = table.rename(index={'MEDLOG SAN ANTONIO':'SAI','SITRANS SAI ALTO DEPOT':'SAI',
+                                    'SITRANS VALPARAISO DEPOT':'VAP','MEDLOG SANTIAGO':'STGO'})
+
+        table = table.groupby('Deposito').sum()
+        # print table.iloc[0]['20DV']
+
+
+
+
+
+
+        import openpyxl
+        import os
+
+        wb = openpyxl.Workbook()
+        sheet = wb.active
+
+        list = []
+
+
 
         print table
 
-        import os
+
+        data = []
+
+        for y in range(len(table.index)):
+            data.append([])
+            for x in range(len(table.columns)):
+                data[-1].append(table.iloc[y][x])
+        print data
+
+        print list
+
+        x = 1
+        z = 0
+        for deposit in data:
+            r = 0
+            sheet.cell(1,x,str(table.index[z]))
+            for value in deposit:
+                sheet.cell(2,x,str(table.columns[r]))
+                sheet.cell(3,x,float(value))
+                x+=1
+                r+=1
+            x+=1
+            z+=1
+
+
+
+        wb.save('demo.xlsx')
+        wb.close()
+        import subprocess
+
+
+
 
         if (save_location == ""):
             print "Saving Output in Program Location!"
@@ -42,9 +103,17 @@ def Deposito():
             Print_Error("Save Directory Not Found!")
             create_directory(save_location)
 
+
         try:
             table.to_excel(save_location+'/file_output.xlsx')
             print "Saved Succesfully"
+            try:
+                os.system('xdg-open ' + os.getcwd() + '/demo.xlsx')
+            except:
+                try:
+                    os.system('start ' + os.getcwd() + '/demo.xlsx')
+                except:
+                    Print_Error("Couldn't open the output file!")
         except:
             Print_Error("Error with output directory")
 
