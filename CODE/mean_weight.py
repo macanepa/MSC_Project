@@ -14,7 +14,7 @@ def mean_weight():
     if(len(available_services) == 0):
         Print_Error(".config File Not Found! Recreating .config File!")
         recreate_config_file()
-        exit()
+        return
 
     # Use parameters from command prompt
 
