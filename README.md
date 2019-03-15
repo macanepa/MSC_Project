@@ -39,7 +39,7 @@ Ejemplo
 
 "save_location;C:\MSC_PROJECT\OUTPUT"
 
-"search_location;/home/matias/Desktop/MAIN_OUTPUT"
+"search_location;C:\MSC_PROJECT\INPUT"
 
 
 Para hacer funcionar el programa es necesario importar el booking final de la nave en cuestión.
